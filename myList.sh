@@ -1,6 +1,6 @@
-printf "<html>" >> output2.html
+echo "<html>" > lsout2.html
 for file in *; do
-    printf "%s <br>" $file 
-done | >> output2.html
-printf "</html>" >> output2.html
-xdg-open output2.html
+    printf "%s <br>" $file >> lsout2.html
+done 
+echo "</html>" >> lsout2.html
+xdg-open lsout2.html
