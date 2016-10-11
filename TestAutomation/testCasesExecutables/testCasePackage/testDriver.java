@@ -2,9 +2,9 @@ package testCasePackage;
 import java.lang.reflect.*;
 import org.martus.client.core.MartusUserNameAndPassword;
 
-// To compile: javac -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar testDriver.java
+// To compile in terminal:
 // javac -cp /home/hugo/workspace/TestAutomation/project testDriver.java
-// java -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar:/home/hugo/workspace/TestAutomation/test Here.testDriver
+// java -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar:/home/hugo/workspace/TestAutomation/test testCasePackage.testDriver
 
 public class testDriver {
 	
