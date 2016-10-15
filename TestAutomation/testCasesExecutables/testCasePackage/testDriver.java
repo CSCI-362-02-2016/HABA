@@ -4,7 +4,7 @@ import org.martus.client.core.MartusUserNameAndPassword;
 
 // To compile in terminal:
 // javac -cp /home/hugo/workspace/TestAutomation/project testDriver.java
-// java -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar:/home/hugo/workspace/TestAutomation/test testCasePackage.testDriver
+// java -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar:/home/hugo/workspace/TestAutomation/testCasesExecutables testCasePackage.testDriver
 
 public class testDriver {
 	
