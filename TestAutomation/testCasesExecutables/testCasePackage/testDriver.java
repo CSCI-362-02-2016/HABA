@@ -3,13 +3,12 @@ import java.lang.reflect.*;
 import org.martus.client.core.MartusUserNameAndPassword;
 
 // To compile in terminal:
-// javac -cp /home/hugo/workspace/TestAutomation/project testDriver.java
-// java -cp /home/hugo/Desktop/MartusClient-4.4.0/martus.jar:/home/hugo/workspace/TestAutomation/testCasesExecutables testCasePackage.testDriver
+// javac -cp ../../project testDriver.java
+// java -cp ../project/Libraries/martus.jar:../testCasesExecutables testCasePackage.testDriver
 
 public class testDriver {
 	
 	public static void main(String[] args){
-		System.out.println("Hello");
 		MartusUserNameAndPassword f = new MartusUserNameAndPassword();
 		
 		//System.out.println(f.getClass().getName().toString());
