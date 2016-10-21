@@ -1,7 +1,7 @@
-testCase1
-The method should return true if the input password length is greater than 15
-and it must contain two or more non-alphabetical characters.
+1
+The method should return true if the input password length is greater than 15 and it must contain two or more non-alphabetical characters.
 MartusUserNameAndPassword
 isWeakPassword
 password
 true
+testCase1

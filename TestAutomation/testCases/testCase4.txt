@@ -1,7 +1,7 @@
-2
+4
 The method should return true if the input password length is greater than 15 and it must contain two or more non-alphabetical characters.
 MartusUserNameAndPassword
-isWeakPassword
-Testedpassword$$
-false
-testCase1
+validateUserNameAndPassword
+TestUserName,TestPassword&&
+No error
+testCase2
