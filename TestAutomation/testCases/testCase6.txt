@@ -1,7 +1,7 @@
-7
+6
 The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
 MartusUserNameAndPassword
 validateUserNameAndPassword
-"", passwordTest_01
-BlankUserNameException
-TestCase2
+TestUserName_1,TestUserName_1
+PasswordMatchedUserNameException
+testCase2

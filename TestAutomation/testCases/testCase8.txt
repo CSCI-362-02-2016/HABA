@@ -2,6 +2,6 @@
 The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
 MartusUserNameAndPassword
 validateUsernameAndPassword
-testUser, test021
+testUser,test021
 PasswordTooShortException
-TestCase2
+testCase2

@@ -8,20 +8,28 @@ import org.martus.common.Exceptions.PasswordTooShortException;
 public class testCase2 {
 	public static void main(String args[]){
 		String [] test = args[0].split(",");
-		System.out.println(test[0].toString());
-		System.out.println(test[1].toString());
+		//System.out.println(test[0].toString());
+		//System.out.println(test[1].toString());
+		String result; 
 	    try {
 			MartusUserNameAndPassword.validateUserNameAndPassword(test[0], test[1].toCharArray());
-			System.out.println("No Error");
+			// System.out.println("NoError");
+			result = "NoError";
 		} catch (BlankUserNameException e) {
-			System.out.println("BlackUserNameException");
-			e.printStackTrace();
+			// System.out.println("BlackUserNameException");
+			result = "BlackUserNameException";
 		} catch (PasswordMatchedUserNameException e) {
-			// TODO Auto-generated catch block
-			System.out.println("PasswordMatchedUserNameException");
+			// System.out.println("PasswordMatchedUserNameException");
+			result = "PasswordMatchedUserNameException";
 		} catch (PasswordTooShortException e) {
-			// TODO Auto-generated catch block
-			System.out.println("PasswordTooShortException");
+			// System.out.println("PasswordTooShortException");
+			result = "PasswordTooShortException";
+		}
+		// System.out.println("The result is: " + result + " and the submitted was " + args[1]);
+		if(result.equals(args[1])){
+			System.out.println("Oracle Test passed");
+		}else{
+			System.out.println("Oracle Test failed");
 		}
 	}
 }

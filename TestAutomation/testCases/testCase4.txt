@@ -3,5 +3,5 @@ The method should return true if the input password length is greater than 15 an
 MartusUserNameAndPassword
 validateUserNameAndPassword
 TestUserName,TestPassword&&
-No error
+NoError
 testCase2
