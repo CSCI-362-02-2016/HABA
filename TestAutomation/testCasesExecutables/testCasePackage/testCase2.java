@@ -17,7 +17,7 @@ public class testCase2 {
 			result = "NoError";
 		} catch (BlankUserNameException e) {
 			// System.out.println("BlackUserNameException");
-			result = "BlackUserNameException";
+			result = "BlankUserNameException";
 		} catch (PasswordMatchedUserNameException e) {
 			// System.out.println("PasswordMatchedUserNameException");
 			result = "PasswordMatchedUserNameException";
