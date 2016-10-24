@@ -5,3 +5,4 @@ validateUserNameAndPassword
 TestUserName_1,TestUserName_1
 PasswordMatchedUserNameException
 testCase2
+oracle2

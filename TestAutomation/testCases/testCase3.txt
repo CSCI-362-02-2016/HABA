@@ -1,7 +1,8 @@
 3
-The method should return true if the input password length is greater than 15 and it must contain two or more non-alphabetical characters.
+The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
 MartusUserNameAndPassword
 isWeakPassword
 TestedPassword21
 true
 testCase1
+oracle1
