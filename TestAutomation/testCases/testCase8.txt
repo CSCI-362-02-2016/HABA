@@ -1,3 +1,12 @@
+
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
 8
 The method should return NoError if the password was longer than 8 characters and didn't match the username, or it should return the exception generated.
 MartusUserNameAndPassword
@@ -5,4 +14,3 @@ validateUsernameAndPassword
 testUser,test021
 PasswordTooShortException
 testCase2
-oracle2
