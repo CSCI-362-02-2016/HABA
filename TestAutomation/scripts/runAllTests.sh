@@ -42,7 +42,7 @@ for filename in testCases/*; do
 	else
 	outcome="fail"
 	echo "Oracle Result:		$outcome"
-	
+	fi
 	# Add results to the table
 	echo "<tr><td>$numTest</td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
 
