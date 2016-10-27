@@ -6,23 +6,24 @@ echo "<table border ="1px">
 # Pulling the testCase driver from the test case
 for filename in testCases/*; do
 	
-	numTest=$(sed -n '1p' "$filename")
-	desc=$(sed -n '2p' "$filename")
-	component=$(sed -n '3p' "$filename")
-	method=$(sed -n '4p' "$filename")
-	input=$(sed -n '5p' "$filename")
-	expected=$(sed -n '6p' "$filename")
-	driver=$(sed -n '7p' "$filename")
-	oracle=$(sed -n '8p' "$filename")
+	numTest=$(sed -n '9p' "$filename")
+	desc=$(sed -n '10p' "$filename")
+	component=$(sed -n '11p' "$filename")
+	method=$(sed -n '12p' "$filename")
+	input=$(sed -n '13p' "$filename")
+	expected=$(sed -n '14p' "$filename")
+	driver=$(sed -n '15p' "$filename")
+	# oracle=$(sed -n '16p' "$filename")
 
 	# Compile the driver
+	# Perhaps should only compile the files once
 	javac -cp ./project ./testCasesExecutables/testCasePackage/$driver.java
-	javac -cp ./project ./oracles/$oracle.java
+	# javac -cp ./project ./oracles/$oracle.java
 
 
 	# Run the driver
 	resultSet=$(java -cp ./project/Libraries/martus.jar:./testCasesExecutables testCasePackage.$driver $input)
-	resultSet2=$(java -cp ./project/Libraries/martus.jar:./oracles $oracle $input $expected)
+	# resultSet2=$(java -cp ./project/Libraries/martus.jar:./oracles $oracle $input $expected)
 
 	# Run Oracle and store the results	
 
@@ -34,10 +35,16 @@ for filename in testCases/*; do
 	echo "Input Arguments:	$input"
 	echo "Expected Output:	$expected"
 	echo "Actual Output:		$resultSet"
-	echo "Oracle results:		$resultSet2"
-
+	
+	if [ $resultSet "==" $expected ]; then
+	outcome="pass"
+	echo "Oracle Result:          	$outcome"
+	else
+	outcome="fail"
+	echo "Oracle Result:		$outcome"
+	
 	# Add results to the table
-	echo "<tr><td>$numTest</td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$resultSet2</td></tr>" >> ./reports/report.html
+	echo "<tr><td>$numTest</td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
 
 done 
 
