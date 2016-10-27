@@ -1,4 +1,3 @@
-
 #Test case number
 #Requirement being tested
 #Class name
@@ -14,4 +13,3 @@ validateUserNameAndPassword
 "",passwordTest_01
 NoError
 testCase2
-oracle2
