@@ -1,11 +1,13 @@
 <table border =1px>
 	<tr><th>TestCase Number</th><th>Method</th><th>Input</th><th>Expected Output</th><th>Actual Output</td><th>Oracle Pass/Fail</th></tr>
 	
-<tr><td>1</td><td>isWeakPassword</td><td>password</td><td>true</td><td>true</td><td>Passed</td></tr>
-<tr><td>2</td><td>isWeakPassword</td><td>Testedpassword$$</td><td>false</td><td>false</td><td>Passed</td></tr>
-<tr><td>3</td><td>isWeakPassword</td><td>TestedPassword21</td><td>true</td><td>true</td><td>Passed</td></tr>
-<tr><td>4</td><td>validateUserNameAndPassword</td><td>TestUserName,TestPassword&&</td><td>NoError</td><td>NoError</td><td>Passed</td></tr>
-<tr><td>5</td><td>validateUserNameAndPassword</td><td>TestUserName,TestUserName</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>Passed</td></tr>
-<tr><td>6</td><td>validateUserNameAndPassword</td><td>TestUserName_1,TestUserName_1</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>Passed</td></tr>
-<tr><td>7</td><td>validateUserNameAndPassword</td><td>"",passwordTest_01</td><td>NoError</td><td>NoError</td><td>Passed</td></tr>
-<tr><td>8</td><td>validateUsernameAndPassword</td><td>testUser,test021</td><td>PasswordTooShortException</td><td>PasswordTooShortException</td><td>Passed</td></tr>
+<tr><td>1</td><td>isWeakPassword</td><td>password</td><td>true</td><td>true</td><td>pass</td></tr>
+<tr><td>2</td><td>isWeakPassword</td><td>Testedpassword$$</td><td>false</td><td>false</td><td>pass</td></tr>
+<tr><td>3</td><td>isWeakPassword</td><td>TestedPassword21</td><td>true</td><td>true</td><td>pass</td></tr>
+<tr><td>4</td><td>validateUserNameAndPassword</td><td>TestUserName,TestPassword&&</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
+<tr><td>5</td><td>validateUserNameAndPassword</td><td>TestUserName,TestUserName</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
+<tr><td>6</td><td>validateUserNameAndPassword</td><td>TestUserName_1,TestUserName_1</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
+<tr><td>7</td><td>validateUserNameAndPassword</td><td>"",passwordTest_01</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
+<tr><td>8</td><td>validateUsernameAndPassword</td><td>testUser,test021</td><td>PasswordTooShortException</td><td>PasswordTooShortException</td><td>pass</td></tr>
+<tr><td>9</td><td>getCombinedPassPhrase</td><td>testUser,test021</td><td>testUsertest021</td><td>testUser
+test021</td><td>fail</td></tr>
