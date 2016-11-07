@@ -1,0 +1,15 @@
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
+13
+The method should return combined password
+PasswordHelper
+getCombinedPassPhrase
+:,:
+:::
+testCase3

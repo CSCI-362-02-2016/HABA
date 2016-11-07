@@ -6,10 +6,10 @@
 #expected output
 #driver used
 
-2
+01
 The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
 MartusUserNameAndPassword
 isWeakPassword
-Testedpassword$$
-false
+password
+true
 testCase1

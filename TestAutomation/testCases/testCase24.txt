@@ -1,0 +1,15 @@
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
+24
+The method should return the correct stored date format
+MartusFlexidate
+extractIsoDateFromStoredDate
+19981129
+1998-11-29
+testCase6

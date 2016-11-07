@@ -1,13 +1,28 @@
 <table border =1px>
 	<tr><th>TestCase Number</th><th>Method</th><th>Input</th><th>Expected Output</th><th>Actual Output</td><th>Oracle Pass/Fail</th></tr>
 	
-<tr><td>1</td><td>isWeakPassword</td><td>password</td><td>true</td><td>true</td><td>pass</td></tr>
-<tr><td>2</td><td>isWeakPassword</td><td>Testedpassword$$</td><td>false</td><td>false</td><td>pass</td></tr>
-<tr><td>3</td><td>isWeakPassword</td><td>TestedPassword21</td><td>true</td><td>true</td><td>pass</td></tr>
-<tr><td>4</td><td>validateUserNameAndPassword</td><td>TestUserName,TestPassword&&</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
-<tr><td>5</td><td>validateUserNameAndPassword</td><td>TestUserName,TestUserName</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
-<tr><td>6</td><td>validateUserNameAndPassword</td><td>TestUserName_1,TestUserName_1</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
-<tr><td>7</td><td>validateUserNameAndPassword</td><td>"",passwordTest_01</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
-<tr><td>8</td><td>validateUsernameAndPassword</td><td>testUser,test021</td><td>PasswordTooShortException</td><td>PasswordTooShortException</td><td>pass</td></tr>
-<tr><td>9</td><td>getCombinedPassPhrase</td><td>testUser,test021</td><td>testUsertest021</td><td>testUser
-test021</td><td>fail</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase01.txt > 01 </a></td><td>isWeakPassword</td><td>password</td><td>true</td><td>true</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase02.txt > 02 </a></td><td>isWeakPassword</td><td>Testedpassword$$</td><td>false</td><td>false</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase03.txt > 03 </a></td><td>isWeakPassword</td><td>TestedPassword21</td><td>true</td><td>true</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase04.txt > 04 </a></td><td>validateUserNameAndPassword</td><td>TestUserName,TestPassword&&</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase05.txt > 05 </a></td><td>validateUserNameAndPassword</td><td>TestUserName,TestUserName</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase06.txt > 06 </a></td><td>validateUserNameAndPassword</td><td>TestUserName_1,TestUserName_1</td><td>PasswordMatchedUserNameException</td><td>PasswordMatchedUserNameException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase07.txt > 07 </a></td><td>validateUserNameAndPassword</td><td>"",passwordTest_01</td><td>NoError</td><td>NoError</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase08.txt > 08 </a></td><td>validateUsernameAndPassword</td><td>testUser,test021</td><td>PasswordTooShortException</td><td>PasswordTooShortException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase09.txt > 09 </a></td><td>getCombinedPassPhrase</td><td>testUser,test021</td><td>test021:testUser</td><td>test021:testUser</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase10.txt > 10 </a></td><td>getCombinedPassPhrase</td><td>testUser, </td><td>ArrayIndexOutOfBoundsException</td><td>ArrayIndexOutOfBoundsException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase11.txt > 11 </a></td><td>getCombinedPassPhrase</td><td>,testPassCombo</td><td>testPassCombo:</td><td>testPassCombo:</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase12.txt > 12 </a></td><td>getCombinedPassPhrase</td><td>,,:</td><td>::,</td><td>:</td><td>fail</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase13.txt > 13 </a></td><td>getCombinedPassPhrase</td><td>:,:</td><td>:::</td><td>:::</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase14.txt > 14 </a></td><td>toStoredDateFormat</td><td>0</td><td>1970-01-01</td><td>1970-01-01</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase15.txt > 15 </a></td><td>toStoredDateFormat</td><td>3,11,29</td><td>0003-11-29</td><td>0003-11-29</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase16.txt > 16 </a></td><td>toStoredDateFormat</td><td>3,11</td><td>ArrayIndexOutOfBoundsException</td><td>ArrayIndexOutOfBoundsException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase17.txt > 17 </a></td><td>toStoredDateFormat</td><td>9990,18,40</td><td>9991-07-10</td><td>9991-07-10</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase18.txt > 18 </a></td><td>toStoredDateFormat</td><td>-,-,-</td><td>NumberFormatException</td><td>NumberFormatException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase19.txt > 19 </a></td><td>getMartusFlexidateString</td><td>2003-01-05,2</td><td>20030105+2</td><td>20030105+2</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase20.txt > 20 </a></td><td>getMartusFlexidateString</td><td>100-05-20,2</td><td>NumberFormatException</td><td>NumberFormatException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase21.txt > 21 </a></td><td>getMartusFlexidateString</td><td>0100-05-20,9999999999</td><td>NumberFormatException</td><td>NumberFormatException</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase22.txt > 22 </a></td><td>extractIsoDateFromStoredDate</td><td>1989-11-29</td><td>1989--1-1-</td><td>1989--1-1-</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase23.txt > 23 </a></td><td>extractIsoDateFromStoredDate</td><td>189-11-29</td><td>189--11--2</td><td>189--11--2</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase24.txt > 24 </a></td><td>extractIsoDateFromStoredDate</td><td>19981129</td><td>1998-11-29</td><td>1998-11-29</td><td>pass</td></tr>
+<tr><td><a href = file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase25.txt > 25 </a></td><td>extractIsoDateFromStoredDate</td><td>0031129</td><td>StringIndexOutOfBoundsException</td><td>StringIndexOutOfBoundsException</td><td>pass</td></tr>

@@ -6,10 +6,10 @@
 #expected output
 #driver used
 
-9
+10
 The method should return combined password
 PasswordHelper
 getCombinedPassPhrase
-testUser,test021
-testUsertest021
+testUser, 
+ArrayIndexOutOfBoundsException
 testCase3

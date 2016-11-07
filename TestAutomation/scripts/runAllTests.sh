@@ -17,7 +17,7 @@ for filename in testCases/*; do
 
 	# Compile the driver
 	# Perhaps should only compile the files once
-	javac -cp ./project ./testCasesExecutables/testCasePackage/$driver.java
+	javac -cp ./project:./project/Libraries/* ./testCasesExecutables/testCasePackage/$driver.java
 	# javac -cp ./project ./oracles/$oracle.java
 
 
@@ -28,10 +28,9 @@ for filename in testCases/*; do
 	# Run Oracle and store the results	
 
 	echo "___________________________________________________"	
-	echo "Test results for the Test Case Number: $numTest"
+	echo "Test results for the Test Case Number: $numTest "
 	echo "Description:		$desc"
 	echo "Driver File:		$driver"
-	echo "Oracle File:		$oracle"
 	echo "Input Arguments:	$input"
 	echo "Expected Output:	$expected"
 	echo "Actual Output:		$resultSet"
@@ -44,7 +43,7 @@ for filename in testCases/*; do
 	echo "Oracle Result:		$outcome"
 	fi
 	# Add results to the table
-	echo "<tr><td>$numTest</td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
+	echo "<tr><td><a href = "file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase$numTest.txt" > $numTest </a></td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
 
 done 
 

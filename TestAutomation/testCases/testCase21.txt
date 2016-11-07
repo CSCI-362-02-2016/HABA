@@ -1,0 +1,15 @@
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
+21
+The method should return the correct date format
+MartusFlexidate
+getMartusFlexidateString
+0100-05-20,9999999999
+NumberFormatException
+testCase5

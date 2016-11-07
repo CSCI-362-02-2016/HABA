@@ -6,7 +6,7 @@
 #expected output
 #driver used
 
-7
+07
 The method should return NoError if the password was longer than 8 characters and didn't match the username, or it should return the exception generated.
 MartusUserNameAndPassword
 validateUserNameAndPassword

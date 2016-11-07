@@ -1,0 +1,15 @@
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
+18
+The method should return the correct date format
+MartusFlexidate
+toStoredDateFormat
+-,-,-
+NumberFormatException
+testCase4

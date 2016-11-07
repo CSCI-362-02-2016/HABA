@@ -6,10 +6,10 @@
 #expected output
 #driver used
 
-6
+08
 The method should return NoError if the password was longer than 8 characters and didn't match the username, or it should return the exception generated.
 MartusUserNameAndPassword
-validateUserNameAndPassword
-TestUserName_1,TestUserName_1
-PasswordMatchedUserNameException
+validateUsernameAndPassword
+testUser,test021
+PasswordTooShortException
 testCase2
