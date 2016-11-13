@@ -6,7 +6,10 @@ import java.util.Date;
 public class testCase4 {
 	public static void main(String args[]){
 		MultiCalendar cal = new MultiCalendar();
-		
+		if(args.length == 0) {
+			System.out.println("EmptyArgument");
+			System.exit(0);
+		}
 		if(args[0].length() == 1){
 			Date date = new Date(Integer.valueOf(args[0]));
 			cal.setTime(date);

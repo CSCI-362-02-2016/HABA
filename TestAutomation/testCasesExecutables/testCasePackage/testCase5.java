@@ -4,6 +4,10 @@ import org.martus.common.utilities.MartusFlexidate;
 
 public class testCase5 {
 	public static void main(String args[]){
+		if(args.length == 0) {
+			System.out.println("EmptyArgument");
+			System.exit(0);
+		}
 		try{
 		String[] pos = args[0].split(",");
 		int pos2 = Integer.valueOf(pos[1]);

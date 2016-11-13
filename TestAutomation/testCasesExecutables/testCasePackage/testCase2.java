@@ -7,6 +7,10 @@ import org.martus.common.Exceptions.PasswordTooShortException;
 
 public class testCase2 {
 	public static void main(String args[]){
+		if(args.length == 0) {
+			System.out.println("EmptyArgument");
+			System.exit(0);
+		}
 		String [] test = args[0].split(",");
 
 	    try {
