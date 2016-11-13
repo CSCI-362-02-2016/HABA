@@ -1,0 +1,15 @@
+#Test case number
+#Requirement being tested
+#Class name
+#method name
+#test input
+#expected output
+#driver used
+
+26
+The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
+MartusUserNameAndPassword
+isWeakPassword
+
+true
+testCase1

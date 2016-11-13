@@ -43,7 +43,7 @@ for filename in testCases/*; do
 	echo "Oracle Result:		$outcome"
 	fi
 	# Add results to the table
-	echo "<tr><td><a href = "file:///home/hugo/Desktop/my_clone4/TestAutomation/testCases/testCase$numTest.txt" > $numTest </a></td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
+	echo "<tr><td><a href = "file://${PWD}/testCases/testCase$numTest.txt" > $numTest </a></td><td>$method</td><td>$input</td><td>$expected</td><td>$resultSet</td><td>$outcome</td></tr>" >> ./reports/report.html
 
 done 
 
