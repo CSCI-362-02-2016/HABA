@@ -18,9 +18,9 @@ done
 # Compile those scrapped drivers
 for driver in "${Array[@]}"
 do
-count=$[count + 1];
+# count=$[count + 1];
   javac -cp ./project:./project/Libraries/* ./testCasesExecutables/testCasePackage/$driver.java
-	echo -ne 'Compling drivers    			Progess:' $((100* $count/${#Array[@]}))'%\r'| sed 's/..$/&/' 
+	 echo -ne 'Compling drivers    			Progess:' $((100* $count/${#Array[@]}))'%\r'| sed 's/..$/&/' 
 done
 
 # Executing the testCase files and associated drivers
@@ -32,7 +32,7 @@ for filename in testCases/*; do
 	method=$(sed -n '12p' "$filename")
 	input=$(sed -n '13p' "$filename")
 	expected=$(sed -n '14p' "$filename")
-
+    driver=$(sed -n '15p' "$filename")
 
 	# Run the driver
 	resultSet=$(java -cp ./project/Libraries/martus.jar:./testCasesExecutables testCasePackage.$driver $input)
