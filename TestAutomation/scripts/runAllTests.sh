@@ -18,7 +18,7 @@ done
 # Compile those scrapped drivers
 for driver in "${Array[@]}"
 do
-# count=$[count + 1];
+count=$[count + 1];
   javac -cp ./project:./project/Libraries/* ./testCasesExecutables/testCasePackage/$driver.java
 	 echo -ne 'Compling drivers    			Progess:' $((100* $count/${#Array[@]}))'%\r'| sed 's/..$/&/' 
 done
