@@ -19,7 +19,7 @@ done
 for driver in "${Array[@]}"
 do
 count=$[count + 1];
-  javac -cp ./project:./project/Libraries/* ./testCasesExecutables/testCasePackage/$driver.java
+  javac -d ./bin/ -cp ./project/:./project/Libraries/* ./testCasesExecutables/testCasePackage/$driver.java
 	 echo -ne 'Compling drivers    			Progess:' $((100* $count/${#Array[@]}))'%\r'| sed 's/..$/&/' 
 done
 
@@ -35,7 +35,7 @@ for filename in testCases/*; do
     driver=$(sed -n '15p' "$filename")
 
 	# Run the driver
-	resultSet=$(java -cp ./project/Libraries/martus.jar:./testCasesExecutables testCasePackage.$driver $input)
+	resultSet=$(java -cp ./bin:./project/Libraries/martus.jar:./testCasesExecutables testCasePackage.$driver $input)
 
 	echo "___________________________________________________"	
 	echo "Test results for the Test Case Number: $numTest "
@@ -59,7 +59,7 @@ done
 
 
 # Open the reports file
-xdg-open ./reports/report.html
+# xdg-open ./reports/report.html
 
 
 

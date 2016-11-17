@@ -50,8 +50,8 @@ public class MartusUserNameAndPassword
 			PasswordMatchedUserNameException,
 			PasswordTooShortException
 	{
-		if (username.length() == 0)
-			throw new BlankUserNameException();
+		/**if (username.length() == 0)
+			throw new BlankUserNameException();*/
 		if (password.length < BASIC_PASSWORD_LENGTH)
 			throw new PasswordTooShortException();
 		if (Arrays.equals(password, username.toCharArray()))

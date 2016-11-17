@@ -17,7 +17,7 @@ public class testCase2 {
 			MartusUserNameAndPassword.validateUserNameAndPassword(test[0], test[1].toCharArray());
 			System.out.println("NoError");
 		} catch (BlankUserNameException e) {
-			System.out.println("BlackUserNameException");
+			System.out.println("BlankUserNameException");
 		} catch (PasswordMatchedUserNameException e) {
 			System.out.println("PasswordMatchedUserNameException");
 		} catch (PasswordTooShortException e) {
