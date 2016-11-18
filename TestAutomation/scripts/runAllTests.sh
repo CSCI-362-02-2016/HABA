@@ -3,7 +3,7 @@ Array=()
 $count
 #Create header of result table
 echo "<table border ="1px">
-	<tr><th>TestCase Number</th><th>Method</th><th>Input</th><th>Expected Output</th><th>Actual Output</td><th>Oracle Pass/Fail</th></tr>
+	<tr><th>TestCase Number</th><th>Method</th><th>Input</th><th>Expected Output</th><th>Actual Output</td><th>Pass/Fail</th></tr>
 	" > ./reports/report.html
 
 # Collect all the driver names from the testCase files
@@ -46,10 +46,10 @@ for filename in testCases/*; do
 	echo "Actual Output:		$resultSet"
 	
 	if [ $resultSet "==" $expected ]; then
-	outcome="pass"
+	outcome="Pass"
 	echo "Oracle Result:          	$outcome"
 	else
-	outcome="fail"
+	outcome="Fail"
 	echo "Oracle Result:		$outcome"
 	fi
 	# Add results to the table
@@ -59,7 +59,7 @@ done
 
 
 # Open the reports file
-# xdg-open ./reports/report.html
+xdg-open ./reports/report.html
 
 
 

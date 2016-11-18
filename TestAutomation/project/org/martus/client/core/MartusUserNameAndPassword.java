@@ -50,12 +50,14 @@ public class MartusUserNameAndPassword
 			PasswordMatchedUserNameException,
 			PasswordTooShortException
 	{
+		// Fault Injection 1
 		/**if (username.length() == 0)
 			throw new BlankUserNameException();*/
 		if (password.length < BASIC_PASSWORD_LENGTH)
 			throw new PasswordTooShortException();
-		if (Arrays.equals(password, username.toCharArray()))
-			throw new PasswordMatchedUserNameException();
+		// Fault Injection 2
+		/**if (Arrays.equals(password, username.toCharArray()))
+			throw new PasswordMatchedUserNameException(); */
 	}
 
 	public static final boolean isWeakPassword(char[] password)

@@ -11,5 +11,5 @@ The method should return NoError if the password was longer than 8 characters an
 MartusUserNameAndPassword
 validateUserNameAndPassword
 "",passwordTest_01
-NoError
+BlankUserNameException
 testCase2

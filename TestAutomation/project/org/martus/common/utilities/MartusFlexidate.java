@@ -89,9 +89,12 @@ public class MartusFlexidate
 	}
 	
 	
-	
+	// Fault Injection 5: Throw NumberFormatException if storedDate is smaller than 7 characters
 	public static String extractIsoDateFromStoredDate(String storedDate)
 	{
+		if(storedDate.length() <= 7 ){
+			throw new NumberFormatException();
+		}
 		String internalFlexidateString = MartusFlexidate.extractInternalFlexidateFromStoredDate(storedDate);
 		String year = internalFlexidateString.substring(0, 4);
 		String month = internalFlexidateString.substring(4, 6);
@@ -121,14 +124,15 @@ public class MartusFlexidate
 					DATE_RANGE_SEPARATER +
 					toFlexidateFormat(beginDate, endDate);
 	}
-
-	public String getMartusFlexidateString() 
+	// Fault injection 4(String to int)
+	public int getMartusFlexidateString() 
 	{
 		int year = begin.getGregorianYear();
 		int month = begin.getGregorianMonth();
 		int day = begin.getGregorianDay();
 		String basePart = MultiDateFormat.format("ymd", "", year, month, day);
-		return basePart + FLEXIDATE_RANGE_DELIMITER + Integer.toString(getRange());
+		//return basePart + FLEXIDATE_RANGE_DELIMITER + Integer.toString(getRange());
+		return Integer.valueOf(basePart) + Integer.valueOf(FLEXIDATE_RANGE_DELIMITER) + getRange();
 	}
 	
 	public MultiCalendar getBeginDate()
@@ -155,10 +159,10 @@ public class MartusFlexidate
 
 	public static String toStoredDateFormat(MultiCalendar date)
 	{		
-		return date.toIsoDateString();				
+		return date.toIsoDateString();			
 	}
-
-	public static String toFlexidateFormat(MultiCalendar beginDate, MultiCalendar endDate)
+	// Fault injection 4(String to int)
+	public static int toFlexidateFormat(MultiCalendar beginDate, MultiCalendar endDate)
 	{		
 		return new MartusFlexidate(beginDate, endDate).getMartusFlexidateString();
 	}		

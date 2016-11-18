@@ -12,6 +12,8 @@ public class testCase6 {
 			System.out.println(MartusFlexidate.extractIsoDateFromStoredDate(args[0]));
 		}catch(StringIndexOutOfBoundsException e){
 			System.out.println("StringIndexOutOfBoundsException");
+		}catch(NumberFormatException e2){
+			System.out.println("NumberFormatException");
 		}
 	}
 }

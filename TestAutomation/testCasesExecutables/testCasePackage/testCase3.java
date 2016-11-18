@@ -1,5 +1,6 @@
 package testCasePackage;
 import org.martus.clientside.PasswordHelper;
+import java.util.InputMismatchException;
 
 public class testCase3 {
 	public static void main(String args[]){
@@ -12,6 +13,8 @@ public class testCase3 {
 			System.out.println(PasswordHelper.getCombinedPassPhrase(test[0],test[1].toCharArray()));
 		}catch(ArrayIndexOutOfBoundsException e){
 			System.out.println("ArrayIndexOutOfBoundsException");
+		}catch(InputMismatchException e1){
+			System.out.println("InputMismatchException");
 		}
 
 		

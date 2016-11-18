@@ -24,6 +24,7 @@ Boston, MA 02111-1307, USA.
 
 */
 package org.martus.clientside;
+import java.util.InputMismatchException;
 
 
 public class PasswordHelper
@@ -31,6 +32,9 @@ public class PasswordHelper
 
 	public static char[] getCombinedPassPhrase(String userName, char[] userPassPhrase)
 	{
+		if(userName.isEmpty()){
+			throw new InputMismatchException();
+		}
 		char[] combined = new char[userName.length() + userPassPhrase.length + 1];
 		System.arraycopy(userPassPhrase,0,combined,0,userPassPhrase.length);
 		combined[userPassPhrase.length] = ':';
