@@ -7,7 +7,7 @@
 #driver used
 
 12
-The method should return combined password
+The method should return the combined password delimited by a ':' character, or the exception generated
 PasswordHelper
 getCombinedPassPhrase
 ,,:

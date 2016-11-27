@@ -7,7 +7,7 @@
 #driver used
 
 01
-The method should return true if the input password length is greater than 15 and has at least 2 non-alphabetical characters.
+The method should return true if the input password length is less than 15 and less than 2 non-alphabetical characters.
 MartusUserNameAndPassword
 isWeakPassword
 password

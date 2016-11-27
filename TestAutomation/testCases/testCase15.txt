@@ -7,7 +7,7 @@
 #driver used
 
 15
-The method should return the correct date format
+The method should return the correct date format delimited by the '-' character, which distinguishes the year from the month and day, or return the exception generated
 MartusFlexidate
 toStoredDateFormat
 3,11,29

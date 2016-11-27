@@ -7,7 +7,7 @@
 #driver used
 
 20
-The method should return the correct date format
+The method should return the correct date as a string appended to the addition of the second input or return the exception generated
 MartusFlexidate
 getMartusFlexidateString
 100-05-20,2

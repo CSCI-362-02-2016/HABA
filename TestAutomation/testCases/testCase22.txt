@@ -7,7 +7,7 @@
 #driver used
 
 22
-The method should return the correct stored date format
+The method should return the correct stored date format by converting the input to a string an adding the delimiter '-' to represent the year, month, and day, or return the exception genenerated
 MartusFlexidate
 extractIsoDateFromStoredDate
 1989-11-29
